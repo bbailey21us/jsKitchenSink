@@ -23,6 +23,7 @@ var trent={
     age:12
 };
 var people=[bill, june, tom, brit,trent];
+var length;
 
 //checks to see if the first letter is greater than L
 if(name.charAt(0)>'l') {
@@ -53,4 +54,17 @@ checkAge("john",17);
 for (i=0;i<people.length; i++){
     checkAge(people[i].name,people[i].age);
 
+}
+
+function getLength(string){
+    return string.length;
+}
+
+length=getLength("hello world");
+console.log(length);
+
+if(length%2==0){
+    console.log("the world is nice and even")
+} else{
+    console.log("the world is an odd place")
 }
